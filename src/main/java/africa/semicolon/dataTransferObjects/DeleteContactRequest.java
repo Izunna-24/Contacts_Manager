@@ -8,4 +8,5 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class DeleteContactRequest {
     private String password;
     private String phoneNumber;
+    private  String id;
 }
