@@ -5,42 +5,56 @@ import africa.semicolon.data.repositories.ContactRepository;
 import africa.semicolon.dataTransferObjects.CreateContactRequest;
 import africa.semicolon.dataTransferObjects.DeleteContactRequest;
 import africa.semicolon.dataTransferObjects.EditContactRequest;
-import africa.semicolon.exceptions.InvalidPhoneNumberException;
-import africa.semicolon.exceptions.NullEmailException;
-import africa.semicolon.exceptions.NullPhoneNumberException;
-import africa.semicolon.exceptions.NullUsernameException;
+import africa.semicolon.exceptions.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.Optional;
+
 @Service
 public class ContactServicesImpl implements ContactServices{
     @Autowired
     private ContactRepository contactRepository;
 
     @Override
-    public List<Contact> findContactByPhoneNumber(String phoneNumber) {
-        return null;
+    public Contact findByPhoneNumber(String phoneNumber) {
+        Optional<Contact> contact = contactRepository.findContactByPhoneNumber(phoneNumber);
+        if (contact.isEmpty()) throw new ContactNotFoundException(String.format("contact with phoneNumber %s, does not exist", phoneNumber));
+        return contact.get();
     }
 
     @Override
-    public List<Contact> findContactByUsername(String username) {
-        return null;
+    public Contact findByUsername(String username) {
+        Optional<Contact> contact = contactRepository.findContactByUsername(username);
+        if (contact.isEmpty()) throw new ContactNotFoundException(String.format("contact with username %s, is not found!",username));
+        return contact.get();
     }
 
     @Override
-    public List<Contact> findContactsById(String id) {
-        return null;
+    public Contact findById(String id) {
+        Optional <Contact> contact = contactRepository.findContactById(id);
+        if (contact.isEmpty()) throw new ContactNotFoundException("phoneNumber not in memory");
+        return contact.get();
     }
 
     @Override
     public void deleteContact(DeleteContactRequest deleteContactRequest) {
+    Contact contact = findById(deleteContactRequest.getId());
+    contactRepository.delete(contact);
 
     }
 
     @Override
     public void editContact(EditContactRequest editContactRequest) {
-
+        Contact contact = findByUsername(editContactRequest.getUsername());
+        if (!contact.getId().equals(editContactRequest.getUsername())) {
+            throw new ContactNotFoundException(String.format("Contact with username %s does not exist", editContactRequest.getUsername()));
+        }
+            contact.setUsername(editContactRequest.getUsername());
+            contact.setPhoneNumber(editContactRequest.getPhoneNumber());
+            contact.setEmail(editContactRequest.getEmail());
+    // do i set id?
+        contactRepository.save(contact);
     }
 
     @Override
