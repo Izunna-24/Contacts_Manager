@@ -51,21 +51,15 @@ public class ContactServicesImpl implements ContactServices{
     contact.setEmail(createContactRequest.getEmail());
     contact.setUsername(createContactRequest.getUsername());
     contactRepository.save(contact);
-
-
-
     }
 
     private static void fieldValidation(CreateContactRequest createContactRequest) {
-        if (createContactRequest.getPhoneNumber().length() != 11 || !createContactRequest.getPhoneNumber().matches("\\d+")){
+        if (createContactRequest.getPhoneNumber().length() != 11 || !createContactRequest.getPhoneNumber().matches("\\d+"))
             throw new InvalidPhoneNumberException("kindly enter  valid phonenumber!");
-        }
-        if (createContactRequest.getUsername() == null){
+        if (createContactRequest.getUsername() == null)
             throw new NullUsernameException("field must be filled");
-        }
-        if (createContactRequest.getEmail() == null){
-            throw  new NullEmailException("field must be filled");
-        }
+        if (createContactRequest.getEmail() == null)throw  new NullEmailException("field must be filled");
+
         //if (createContactRequest.getPhoneNumber() == null){
             //throw new NullPhoneNumberException("field must be filled");
         }
