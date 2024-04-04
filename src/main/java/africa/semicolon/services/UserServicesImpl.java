@@ -27,7 +27,7 @@ public class UserServicesImpl implements UserServices {
     }
 
     @Override
-    public void addContact(AddContactRequest addContactRequest) {
+    public void createContact(CreateContactRequest createContactRequest) {
 
     }
 
