@@ -7,10 +7,10 @@ import africa.semicolon.dataTransferObjects.EditContactRequest;
 
 public interface ContactServices {
 Contact findByPhoneNumber(String phoneNumber);
-Contact findByUsername(String username);
+
 Contact findById(String id);
-void deleteContact(DeleteContactRequest deleteContactRequest);
+Contact deleteContact(DeleteContactRequest deleteContactRequest);
 void editContact(EditContactRequest editContactRequest);
-void createContact(CreateContactRequest createContactRequest);
+Contact createContact(CreateContactRequest createContactRequest);
 
 }
