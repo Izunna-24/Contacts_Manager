@@ -14,6 +14,8 @@ public class User {
     private String id;
     private String username;
     private String password;
+    private String phoneNumber;
+    private boolean isLocked = true;
 
     @DBRef
     private List<Contact> contacts;
