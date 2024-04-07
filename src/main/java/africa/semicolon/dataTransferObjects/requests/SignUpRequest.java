@@ -1,10 +1,9 @@
-package africa.semicolon.dataTransferObjects;
+package africa.semicolon.dataTransferObjects.requests;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document
 public class SignUpRequest {
 private String email;
 private String phoneNumber;

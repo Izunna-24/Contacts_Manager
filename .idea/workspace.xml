@@ -5,22 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6977327b-1812-4b6c-a6ad-27804a657998" name="Changes" comment="java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/exceptions/WrongSignInDetailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/utilities/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/services/UserServicesImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/requests/SignOutRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/responses/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/responses/SignInResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/responses/SignUpResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/exceptions/UserExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/controllers/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/models/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/repositories/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/repositories/ContactRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/data/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/DeleteContactRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/DeleteContactRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/EditContactRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/EditContactRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/SignInRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/SignInRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/CreateContactRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/requests/CreateContactRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/DeleteContactRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/requests/DeleteContactRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/EditContactRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/requests/EditContactRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/SignInRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/requests/SignInRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/SignUpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/dataTransferObjects/requests/SignUpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/exceptions/ContactManagerExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/exceptions/ContactManagerExceptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/ContactServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/ContactServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/ContactServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/ContactServicesImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/UserServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/services/UserServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/utilities/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/utilities/Mapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/services/ContactServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/services/ContactServicesImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/services/UserServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/services/UserServicesImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "HTTP Request.generated-requests | #3.executor": "Run",
     "JUnit.ContactRepositoryTest.testThatContactsAreSavedInThisRepository.executor": "Run",
     "JUnit.ContactServicesImplTest.contactsCanBeCreatedTest.executor": "Run",
     "JUnit.ContactServicesImplTest.createTwoContact_deleteOne_OneRemainsTest.executor": "Run",
@@ -64,11 +73,14 @@
     "JUnit.ContactServicesImplTest.executor": "Run",
     "JUnit.ContactServicesImplTest.findContactByPhoneNumber_contactIsFound.executor": "Run",
     "JUnit.ContactServicesImplTest.nullContactWhileFindingByPhoneNumber_throwsExceptionTest.executor": "Run",
+    "JUnit.UserControllerTest.userSignsUp_isSuccessful.executor": "Run",
+    "JUnit.UserControllerTest.userSignsUp_isSuccessful_false.executor": "Run",
     "JUnit.UserRepositoryTest.executor": "Run",
     "JUnit.UserRepositoryTest.usersCanBeSavedInThisRepoTest.executor": "Run",
     "JUnit.UserRepositoryTest.usersCanBeSavedInThisRepositoryTest.executor": "Run",
     "JUnit.UserServicesImplTest.executor": "Run",
     "JUnit.UserServicesImplTest.userCanSign_in_Test.executor": "Run",
+    "JUnit.UserServicesImplTest.userCanSign_outTest.executor": "Run",
     "JUnit.UserServicesImplTest.userSignInWith_wrongEmail_serviceThrowsWrongSignInException.executor": "Run",
     "JUnit.UserServicesImplTest.userSignsUpWithSameDetail_userCountThrowsUserExistsException.executor": "Run",
     "JUnit.UserServicesImplTest.userSignsUp_numberOfUsersIncreaseByOneTest.executor": "Run",
@@ -103,13 +115,46 @@
       <recent name="C:\Users\DELL\IdeaProjects\Contacts_Manager\src\test\resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="africa.semicolon.controllers" />
       <recent name="africa.semicolon.services" />
       <recent name="africa.semicolon.data.repositories" />
       <recent name="com.contacts.data.repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactServicesImplTest.nullContactWhileFindingByPhoneNumber_throwsExceptionTest">
-    <configuration name="ContactServicesImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserServicesImplTest.userSignsUpWithSameDetail_userCountThrowsUserExistsException">
+    <configuration name="UserControllerTest.userSignsUp_isSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Contacts_Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.controllers" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.controllers.UserControllerTest" />
+      <option name="METHOD_NAME" value="userSignsUp_isSuccessful" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.userSignsUp_isSuccessful_false" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Contacts_Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.controllers" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.controllers.UserControllerTest" />
+      <option name="METHOD_NAME" value="userSignsUp_isSuccessful_false" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServicesImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Contacts_Manager" />
       <extension name="coverage">
         <pattern>
@@ -118,13 +163,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.ContactServicesImplTest" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.UserServicesImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactServicesImplTest.createTwoContact_deleteOne_OneRemainsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServicesImplTest.userCanSign_outTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Contacts_Manager" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +178,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.ContactServicesImplTest" />
-      <option name="METHOD_NAME" value="createTwoContact_deleteOne_OneRemainsTest" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.UserServicesImplTest" />
+      <option name="METHOD_NAME" value="userCanSign_outTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactServicesImplTest.createdContact_canBeDeleted_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServicesImplTest.userSignsUpWithSameDetail_userCountThrowsUserExistsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Contacts_Manager" />
       <extension name="coverage">
         <pattern>
@@ -149,40 +194,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.ContactServicesImplTest" />
-      <option name="METHOD_NAME" value="createdContact_canBeDeleted_test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactServicesImplTest.findContactByPhoneNumber_contactIsFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Contacts_Manager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.ContactServicesImplTest" />
-      <option name="METHOD_NAME" value="findContactByPhoneNumber_contactIsFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactServicesImplTest.nullContactWhileFindingByPhoneNumber_throwsExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Contacts_Manager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.services" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.ContactServicesImplTest" />
-      <option name="METHOD_NAME" value="nullContactWhileFindingByPhoneNumber_throwsExceptionTest" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.services.UserServicesImplTest" />
+      <option name="METHOD_NAME" value="userSignsUpWithSameDetail_userCountThrowsUserExistsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContactServicesImplTest.nullContactWhileFindingByPhoneNumber_throwsExceptionTest" />
-        <item itemvalue="JUnit.ContactServicesImplTest.findContactByPhoneNumber_contactIsFound" />
-        <item itemvalue="JUnit.ContactServicesImplTest" />
-        <item itemvalue="JUnit.ContactServicesImplTest.createTwoContact_deleteOne_OneRemainsTest" />
-        <item itemvalue="JUnit.ContactServicesImplTest.createdContact_canBeDeleted_test" />
+        <item itemvalue="JUnit.UserServicesImplTest.userSignsUpWithSameDetail_userCountThrowsUserExistsException" />
+        <item itemvalue="JUnit.UserServicesImplTest" />
+        <item itemvalue="JUnit.UserServicesImplTest.userCanSign_outTest" />
+        <item itemvalue="JUnit.UserControllerTest.userSignsUp_isSuccessful_false" />
+        <item itemvalue="JUnit.UserControllerTest.userSignsUp_isSuccessful" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +227,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712148108973</updated>
       <workItem from="1712148110118" duration="12887000" />
-      <workItem from="1712169113137" duration="45992000" />
+      <workItem from="1712169113137" duration="67376000" />
+      <workItem from="1712509942748" duration="9891000" />
     </task>
     <task id="LOCAL-00001" summary="java">
       <option name="closed" value="true" />
@@ -376,7 +390,135 @@
       <option name="project" value="LOCAL" />
       <updated>1712197857755</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360617264</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360617265</updated>
+    </task>
+    <task id="LOCAL-00022" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360653607</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360653607</updated>
+    </task>
+    <task id="LOCAL-00023" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360675455</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360675455</updated>
+    </task>
+    <task id="LOCAL-00024" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360700418</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360700418</updated>
+    </task>
+    <task id="LOCAL-00025" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360748333</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360748333</updated>
+    </task>
+    <task id="LOCAL-00026" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360765084</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360765084</updated>
+    </task>
+    <task id="LOCAL-00027" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360787295</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360787295</updated>
+    </task>
+    <task id="LOCAL-00028" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360808157</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360808157</updated>
+    </task>
+    <task id="LOCAL-00029" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360828630</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360828630</updated>
+    </task>
+    <task id="LOCAL-00030" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360851232</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360851232</updated>
+    </task>
+    <task id="LOCAL-00031" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360872034</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360872034</updated>
+    </task>
+    <task id="LOCAL-00032" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360907123</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360907123</updated>
+    </task>
+    <task id="LOCAL-00033" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360928227</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360928227</updated>
+    </task>
+    <task id="LOCAL-00034" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360940814</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360940814</updated>
+    </task>
+    <task id="LOCAL-00035" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360963868</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360963868</updated>
+    </task>
+    <task id="LOCAL-00036" summary="java">
+      <option name="closed" value="true" />
+      <created>1712360976778</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1712360976778</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -2,9 +2,9 @@ package africa.semicolon.services;
 
 import africa.semicolon.data.models.Contact;
 import africa.semicolon.data.repositories.ContactRepository;
-import africa.semicolon.dataTransferObjects.CreateContactRequest;
-import africa.semicolon.dataTransferObjects.DeleteContactRequest;
-import africa.semicolon.dataTransferObjects.EditContactRequest;
+import africa.semicolon.dataTransferObjects.requests.CreateContactRequest;
+import africa.semicolon.dataTransferObjects.requests.DeleteContactRequest;
+import africa.semicolon.dataTransferObjects.requests.EditContactRequest;
 import africa.semicolon.exceptions.ContactManagerExceptions;
 import africa.semicolon.exceptions.ContactNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
