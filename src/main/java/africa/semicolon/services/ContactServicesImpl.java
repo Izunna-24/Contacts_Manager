@@ -36,14 +36,13 @@ public class ContactServicesImpl implements ContactServices{
     public Contact deleteContact(DeleteContactRequest deleteContactRequest) {
     Contact contact = findById(deleteContactRequest.getId());
     contactRepository.delete(contact);
-
         return contact;
     }
 
     @Override
     public void editContact(EditContactRequest editContactRequest) {
         Contact contact = findById(editContactRequest.getId());
-            contact.setContactName(editContactRequest.getUsername());
+            //contact.setContactName(editContactRequest.getUsername());
             contact.setPhoneNumber(editContactRequest.getPhoneNumber());
             contact.setEmail(editContactRequest.getEmail());
         contactRepository.save(contact);
@@ -55,15 +54,15 @@ public class ContactServicesImpl implements ContactServices{
     fieldValidation(createContactRequest);
     contact.setPhoneNumber(createContactRequest.getPhoneNumber());
     contact.setEmail(createContactRequest.getEmail());
-    contact.setContactName(createContactRequest.getUsername());
+    //contact.setContactName(createContactRequest.getUsername());
     return contactRepository.save(contact);
     }
 
     private static void fieldValidation(CreateContactRequest createContactRequest) {
         if (createContactRequest.getPhoneNumber().length() != 11 || !createContactRequest.getPhoneNumber().matches("\\d+"))
             throw new InvalidPhoneNumberException("kindly enter  valid phonenumber!");
-        if (createContactRequest.getUsername() == null)
-            throw new NullUsernameException("field must be filled");
+        //if (createContactRequest.getUsername() == null)
+            //throw new NullUsernameException("field must be filled");
         if (createContactRequest.getEmail() == null)throw  new NullEmailException("field must be filled");
 
         //if (createContactRequest.getPhoneNumber() == null){

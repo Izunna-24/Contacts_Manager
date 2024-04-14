@@ -44,11 +44,7 @@ public class UserServicesImpl implements UserServices {
         user.setEmail(signInRequest.getEmail());
         user.setLocked(false);
         User savedUser = userRepository.save(user);
-        SignInResponse signInResponse = new SignInResponse();
-        signInResponse.setUsername(savedUser.getUsername());
-        signInResponse.setLocked(savedUser.isLocked());
-        return signInResponse;
-
+        return Mapper.signInResponseMap(savedUser);
     }
 
     private static void loginValidation(SignInRequest signInRequest, User user) {
@@ -59,10 +55,10 @@ public class UserServicesImpl implements UserServices {
 
     @Override
     public void createContactWith(CreateContactRequest createContactRequest) {
-     Contact contact = contactServices.createContact(createContactRequest);
-     User user = userRepository.findUserByUsername(createContactRequest.getUsername());
-     user.getContacts().add(contact);
-     userRepository.save(user);
+        User user = userRepository.findUserByEmail(createContactRequest.getEmail());
+        Contact contact = contactServices.createContact(createContactRequest);
+        user.getContacts().add(contact);
+        userRepository.save(user);
     }
 
     @Override

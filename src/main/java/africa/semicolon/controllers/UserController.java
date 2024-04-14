@@ -39,7 +39,7 @@ public class UserController {
     private String addContact(@RequestBody CreateContactRequest createContactRequest){
         try{
             userServices.createContactWith(createContactRequest);
-            return String.format("%s's contact has been added successfully",createContactRequest.getUsername());
+            return String.format("%s's contact has been added successfully",createContactRequest.getEmail());
         }catch (ContactManagerExceptions error){
             return error.getMessage();
         }
@@ -49,7 +49,7 @@ public class UserController {
     private String editContact(@RequestBody EditContactRequest editContactRequest){
         try{
             userServices.editContactWith(editContactRequest);
-            return String.format("%s is updated", editContactRequest.getUsername());
+            return String.format("%s is updated", editContactRequest.getEmail());
         }catch (ContactManagerExceptions error){
             return error.getMessage();
         }
@@ -59,7 +59,7 @@ public class UserController {
     private String deleteContact(@RequestBody DeleteContactRequest deleteContactRequest){
         try {
             userServices.deleteContactWith(deleteContactRequest);
-            return String.format("%s has been deleted from your contact list", deleteContactRequest.getPhoneNumber());
+            return ("Contact deleted successfully");
         }catch  (ContactManagerExceptions error){
             return error.getMessage();
         }
@@ -70,7 +70,7 @@ public class UserController {
                 private String findContact(@PathVariable("id") String id){
                     try{
             userServices.findContactById(id);
-            return String.format("%s");
+            return String.format("%s%n,");
                      }catch (ContactManagerExceptions error){
             return error.getMessage();
         }

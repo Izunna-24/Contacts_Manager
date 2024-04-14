@@ -7,5 +7,5 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class CreateContactRequest {
     private String phoneNumber;
     private String email;
-    private String username;
+    //private String username;
 }

@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 public class DeleteContactRequest {
-    private String password;
-    private String phoneNumber;
+   // private String password;
+    //private String phoneNumber;
     @Id
     private  String id;
 }

@@ -8,6 +8,7 @@ import africa.semicolon.dataTransferObjects.requests.EditContactRequest;
 public interface ContactServices {
 Contact findByPhoneNumber(String phoneNumber);
 
+
 Contact findById(String id);
 Contact deleteContact(DeleteContactRequest deleteContactRequest);
 void editContact(EditContactRequest editContactRequest);
